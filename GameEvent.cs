@@ -2,12 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GameEvent
-{
-    public GameEvent()
-    {
-
-    }
+public class GameEvent {
 
     public string ShowText { get; set; }
     public string ResultTextA { get; set; }
@@ -24,9 +19,7 @@ public class GameEvent
     public Changes Changes_A;
     public Changes Changes_B;
 
-
-    public class Changes
-    {
+    public class Changes {
         public int people;
         public int policy;
         public int military;
@@ -35,14 +28,8 @@ public class GameEvent
 
 }
 
-public class SerialGameEvent:GameEvent
-{
+public class SerialGameEvent : GameEvent {
     public int NextID_A;
     public int NextID_B;
     public bool IsBegin;
-}
-
-public class KeyEvent:GameEvent
-{
-        
 }
